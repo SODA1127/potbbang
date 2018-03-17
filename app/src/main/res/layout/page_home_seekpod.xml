@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/seekpodTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="팟캐스트 제목" />
+        <com.pm10.library.LineIndicator
+            android:id="@+id/line_indicator"
+            android:layout_width="72dp"
+            android:layout_height="6dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center"
+            app:p_defaultColor="@color/white"
+            app:p_gap="10dp"
+            app:p_lineHeight="6dp"
+            app:p_lineWidth="24dp"
+            app:p_selectedColor="@color/gray"
+            app:p_strokeColor="@color/gray"
+            app:p_strokeWidth="1dp" />
+        <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+            android:layout_below="@+id/seekpodTV"
+            android:id="@+id/seekpodViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"/>
+    </RelativeLayout>
+</LinearLayout>

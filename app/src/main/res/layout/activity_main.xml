@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.limefriends.potbbang.MainActivity"
+    android:background="#eeeeee">
+
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/menuTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#000000"
+        app:tabIndicatorHeight="6dp"
+        android:background="#ffffff"/>
+    <View
+        android:id="@+id/menuTabBaseLine"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/menuTab" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/podbbangPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:layout_below="@id/menuTab">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
